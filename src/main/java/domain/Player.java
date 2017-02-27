@@ -1,6 +1,7 @@
 package domain;
 
 import javax.tools.DocumentationTool;
+import java.util.Scanner;
 
 /**
  * Created by pk on 25.02.2017.
@@ -17,21 +18,21 @@ public class Player {
     public String getName() {
         return name;
     }
-
     public Location getCurrentLocation() {
         return currentLocation;
     }
 
+
     public void setName(String name) {
         this.name = name;
     }
-
     public void setCurrentLocation(Location location) {
         this.currentLocation = location;
 
     }
 
     public String getCurrentLocationDescription() {
-       return  this.currentLocation.getDescription();
+       return  this.currentLocation.getDescription() ;
     }
+
 }
